@@ -4,7 +4,9 @@ import os
 import requests
 from cloudflare_llm import CloudFlareLLM
 from base_http_client import BaseHTTPClient
+from dotenv import load_dotenv
 
+load_dotenv()
 
 JSON_API_KEY = os.getenv('JSONBIN_API_KEY')
 JSON_BIN_ID = '67d51a948a456b7966761e9c'
